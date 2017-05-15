@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/moveinandmoveout_padding_left"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:text="@string/moveinandmoveout_propertyname"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingTop="@dimen/moveinandmoveout_padding_top"
+            android:paddingLeft="@dimen/moveinandmoveout_padding_left"
+            android:textSize="@dimen/moveinandmoveout_title_size" />
+
+        <TextView
+            android:id="@+id/moveinandmoveout_property_detail_propertyname"
+            android:text="Francklin Road"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingTop="@dimen/moveinandmoveout_padding_top"
+            android:paddingLeft="@dimen/moveinandmoveout_padding_left"
+            android:textSize="@dimen/moveinandmoveout_value_size"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="8dp"
+            android:background="#1A000000"/>
+        <TextView
+            android:text="@string/moveinandmoveout_address"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/moveinandmoveout_padding_left"
+            android:layout_height="30dp"
+            android:paddingTop="@dimen/moveinandmoveout_padding_top"
+            android:textSize="@dimen/moveinandmoveout_title_size" />
+
+        <TextView
+            android:id="@+id/moveinandmoveout_property_detail_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/moveinandmoveout_padding_top"
+            android:paddingLeft="@dimen/moveinandmoveout_padding_left"
+            android:textSize="@dimen/moveinandmoveout_value_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moveinandmoveout_property_detail_UNIT"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/moveinandmoveout_padding_top_propertydetail"
+        android:layout_marginBottom="5dp"
+        android:layout_height="35dp">
+        <TextView
+            android:id="@+id/moveinandmoveout_property_detail_UNIT_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:text="@string/moveinandmoveout_units"
+            android:gravity="left|center"
+            android:textSize="@dimen/moveinandmoveout_value_size"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/moveinandmoveout_property_details_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/moveinandmoveout_property_details_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

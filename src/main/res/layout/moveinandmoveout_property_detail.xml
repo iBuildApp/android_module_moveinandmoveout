@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/moveinandmoveout_main_details_root">
+
+    <com.ibuildapp.moveinandmoveout.view.DetailsViewPager
+        android:id="@+id/moveinandmoveout_details_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <RelativeLayout
+        android:id="@+id/moveinandmoveout_details_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#B3000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/moveinandmoveout_details_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/moveinandmoveout_prev_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/moveinandmoveout_value_size"
+                android:textColor="#FFF"
+                android:text="@string/moveinandmoveout_previous"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moveinandmoveout_details_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/moveinandmoveout_value_size"
+                android:textColor="#FFF"
+                android:text="@string/moveinandmoveout_next"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/moveinandmoveout_next_white"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

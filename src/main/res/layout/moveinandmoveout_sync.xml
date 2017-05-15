@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    android:gravity="center">
+
+    <com.ibuildapp.moveinandmoveout.view.ShimmerFrameLayout
+        android:id="@+id/moveinandmoveout_sync_shimmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        shimmer:duration="1500"
+        shimmer:repeat_delay="1000"
+        shimmer:base_alpha="0.5">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/moveinandmoveout_sync_white"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/moveinandmoveout_title_size"
+            android:textColor="#FFF"
+            android:text="@string/moveinandmoveout_sync_with_backend"
+            android:layout_marginBottom="25dp"/>
+
+        <fragment
+            android:id="@+id/moveinandmoveout_sync_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="com.ibuildapp.moveinandmoveout.fragments.SyncProgressFragment"/>
+
+        <FrameLayout
+            android:id="@+id/moveinandmoveout_sync_cancel_button"
+            android:layout_width="230dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/moveinandmoveout_sync_cancel_background">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#FFF"
+                    android:text="@string/moveinandmoveout_cancel"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/moveinandmoveout_sync_button_pressed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/moveinandmoveout_sync_cancel_pressed"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+    </LinearLayout>
+    </com.ibuildapp.moveinandmoveout.view.ShimmerFrameLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="moveinandmoveout_main_bottom_bar_height">44dp</dimen>
+    <dimen name="moveinandmoveout_edit_type_stroke_width">1pt</dimen>
+    <dimen name="moveinandmoveout_screen_offset">6dp</dimen>
+    <dimen name="moveinandmoveout_inner_offset">4dp</dimen>
+    <dimen name="moveinandmoveout_inner_offset_vertically">5dp</dimen>
+    <dimen name="moveinandmoveout_main_item_bottom">5dp</dimen>
+    <dimen name="content_inset_half">8dp</dimen>
+    <dimen name="content_inset">16dp</dimen>
+    <dimen name="moveinandmoveout_title_size">13sp</dimen>
+    <dimen name="moveinandmoveout_value_size">17sp</dimen>
+    <dimen name="moveinandmoveout_padding_top">7dp</dimen>
+    <dimen name="moveinandmoveout_padding_top_propertydetail">12dp</dimen>
+    <dimen name="moveinandmoveout_padding_left">7dp</dimen>
+    <dimen name="moveinandmoveout_second_button_height">40dp</dimen>
+    <dimen name="moveinandmoveout_second_button_width">100dp</dimen>
+    <dimen name="moveinandmoveout_second_button_textsize">16dp</dimen>
+    <dimen name="moveinandmoveout_signature_lock">3dp</dimen>
+    <dimen name="moveinandmoveout_signature_unlock">1px</dimen>
+    <dimen name="moveinandmoveout_moveout_second_text">120dp</dimen>
+    <dimen name="moveinandmoveout_history_text_size">14sp</dimen>
+    <dimen name="moveinandmoveout_main_text_size">14sp</dimen>
+    <dimen name="moveinandmoveout_toppanel_text_size">12sp</dimen>
+</resources>

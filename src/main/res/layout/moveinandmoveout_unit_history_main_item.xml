@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/moveinandmoveout_unti_history_item"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center|center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/moveinandmoveout_main_header_background"
+        android:weightSum="3"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/moveinandmoveout_unti_history_dateIn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:gravity="left|center"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/moveinandmoveout_history_text_size"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/moveinandmoveout_unti_history_dateOut"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:textColor="#000000"
+            android:textSize="@dimen/moveinandmoveout_history_text_size"
+            android:gravity="left|center"
+            android:paddingLeft="3dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/moveinandmoveout_unti_history_tenantName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="3dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center"
+            android:textColor="#000000"
+            android:textSize="@dimen/moveinandmoveout_history_text_size"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+ </LinearLayout>
+</ScrollView>
