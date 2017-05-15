@@ -75,7 +75,7 @@ public class PropertyDetailFragment extends Fragment {
     private void initColorScheme() {
         propertynameValue.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor3());
         addressValue.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor3());
-        unit.setBackgroundColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
+        unit.setBackgroundColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
         unit_text.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor1());
     }
 

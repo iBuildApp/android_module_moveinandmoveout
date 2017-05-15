@@ -135,10 +135,10 @@ public class AddressDetailFragment extends Fragment  {
         tenantTitle.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor3());
         tenantValue.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor3());
 
-        moveinandmoveout.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawable(StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
-        moveinandmoveout_history.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        map.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
+        moveinandmoveout.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawable(StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
+        moveinandmoveout_history.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        map.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
 
 
     }

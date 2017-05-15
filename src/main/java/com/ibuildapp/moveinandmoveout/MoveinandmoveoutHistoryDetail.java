@@ -87,8 +87,8 @@ public class MoveinandmoveoutHistoryDetail extends AppBuilderModuleMainAppCompat
        //Первый ряд
         firstMovein = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveIn);
         firstMovein.setText(data.getLrDoorsLlocksIn().substring(0,1).toUpperCase()+data.getLrDoorsLlocksIn().substring(1));
-        firstMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(firstMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        firstMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(firstMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         firstMoveOut = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveOut);
         if (!data.getLrDoorsLocksOut().equals("")) {
@@ -96,13 +96,13 @@ public class MoveinandmoveoutHistoryDetail extends AppBuilderModuleMainAppCompat
         } else  {
             firstMoveOut.setText("");
         }
-        firstMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(firstMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        firstMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(firstMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
         //Второй ряд
         secondMovein = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveIn2);
         secondMovein.setText(data.getLrWindowsScreensIn().substring(0,1).toUpperCase()+data.getLrWindowsScreensIn().substring(1));
-        secondMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(secondMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        secondMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(secondMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         secondMoveOut = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveOut2);
         if (!data.getLrWindowsScreensOut().equals("")) {
@@ -110,13 +110,13 @@ public class MoveinandmoveoutHistoryDetail extends AppBuilderModuleMainAppCompat
         } else {
             secondMoveOut.setText("");
         }
-        secondMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(secondMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        secondMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(secondMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
         //Третий
         thirdMovein = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveIn3);
         thirdMovein.setText(data.getLrCarpetFlooringIn().substring(0,1).toUpperCase()+data.getLrCarpetFlooringIn().substring(1));
-        thirdMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(thirdMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        thirdMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(thirdMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         thirdMoveOut = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveOut3);
         if (!data.getLrCFlooringOut().equals("")) {
@@ -124,13 +124,13 @@ public class MoveinandmoveoutHistoryDetail extends AppBuilderModuleMainAppCompat
         } else  {
             thirdMoveOut.setText("");
         }
-        thirdMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(thirdMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        thirdMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(thirdMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
         //Четвертый
         fourthMovein = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveIn4);
         fourthMovein.setText(data.getDrWindowScreensIn().substring(0,1).toUpperCase()+data.getDrWindowScreensIn().substring(1));
-        fourthMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(fourthMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        fourthMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(fourthMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         fourthMoveOut = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveOut4);
         if (!data.getDrWindowScreensOut().equals("")) {
@@ -138,14 +138,14 @@ public class MoveinandmoveoutHistoryDetail extends AppBuilderModuleMainAppCompat
         } else {
             fourthMoveOut.setText("");
         }
-        fourthMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(fourthMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        fourthMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(fourthMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         //Пятый
         fiveMovein = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveIn5);
         fiveMovein.setText(data.getDrCarpetFlooringIn().substring(0,1).toUpperCase()+data.getDrCarpetFlooringIn().substring(1));
-        fiveMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(fiveMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        fiveMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(fiveMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         fiveMoveOut = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveOut5);
         if (!data.getDrCarpetFlooringOut().equals("")) {
@@ -153,14 +153,14 @@ public class MoveinandmoveoutHistoryDetail extends AppBuilderModuleMainAppCompat
         } else {
             fiveMoveOut.setText("");
         }
-        fiveMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(fiveMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        fiveMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(fiveMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         //Шестой
         sixtMovein = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveIn6);
         sixtMovein.setText(data.gethCarpetFlooringIn().substring(0,1).toUpperCase()+data.gethCarpetFlooringIn().substring(1));
-        sixtMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(sixtMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        sixtMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(sixtMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         sixtMoveOut = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveOut6);
         if (!data.gethCarpetFlooringOut().equals("")) {
@@ -169,14 +169,14 @@ public class MoveinandmoveoutHistoryDetail extends AppBuilderModuleMainAppCompat
         {
             sixtMoveOut.setText("");
         }
-        sixtMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(sixtMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        sixtMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(sixtMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         //Седьмой
         sevenMovein = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveIn7);
         sevenMovein.setText(data.gethWwallsIn().substring(0,1).toUpperCase()+data.gethWwallsIn().substring(1));
-        sevenMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(sevenMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        sevenMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(sevenMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         sevenMoveOut = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveOut7);
         if (!data.gethWallsOut().equals("")) {
@@ -185,14 +185,14 @@ public class MoveinandmoveoutHistoryDetail extends AppBuilderModuleMainAppCompat
         {
             sevenMoveOut.setText("");
         }
-        sevenMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(sevenMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        sevenMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(sevenMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         //Восьмой
         eightMovein = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveIn8);
         eightMovein.setText(data.gethLightsSwitchesIn().substring(0,1).toUpperCase()+data.gethLightsSwitchesIn().substring(1));
-        eightMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(eightMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        eightMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(eightMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         eightMoveOut = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveOut8);
         if (!data.gethLightsSwitchesOut().equals("")) {
@@ -200,14 +200,14 @@ public class MoveinandmoveoutHistoryDetail extends AppBuilderModuleMainAppCompat
         } else {
             eightMoveOut.setText("");
         }
-        eightMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(eightMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        eightMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(eightMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         //Девятый
         nineMovein = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveIn9);
         nineMovein.setText(data.getkWindowsScreensIn().substring(0,1).toUpperCase()+data.getkWindowsScreensIn().substring(1));
-        nineMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(nineMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        nineMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(nineMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         nineMoveOut = (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveOut9);
         if (!data.getkWindowsScreensOut().equals("")) {
@@ -215,14 +215,14 @@ public class MoveinandmoveoutHistoryDetail extends AppBuilderModuleMainAppCompat
         } else {
             nineMoveOut.setText("");
         }
-        nineMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(nineMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        nineMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(nineMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         //Десятый
         tenMovein= (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveIn10);
         tenMovein.setText(data.getkFlooringIn().substring(0,1).toUpperCase()+data.getkWindowsScreensIn().substring(1));
-        tenMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(tenMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        tenMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(tenMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         tenMoveOut= (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveOut10);
         if (!data.getkFlooringOut().equals("")) {
@@ -230,14 +230,14 @@ public class MoveinandmoveoutHistoryDetail extends AppBuilderModuleMainAppCompat
         } else {
             tenMoveOut.setText("");
         }
-        tenMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(tenMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        tenMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(tenMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         //Одиннадцатый
         elevenMovein= (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveIn11);
         elevenMovein.setText(data.getkRefrigeratorIn().substring(0,1).toUpperCase()+data.getkRefrigeratorIn().substring(1));
-        elevenMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(elevenMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        elevenMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(elevenMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         elevenMoveOut= (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveOut11);
         if (!data.getkRefrigeratorOut().equals("")) {
@@ -245,15 +245,15 @@ public class MoveinandmoveoutHistoryDetail extends AppBuilderModuleMainAppCompat
         } else {
             elevenMoveOut.setText("");
         }
-        elevenMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(elevenMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        elevenMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(elevenMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
 
         //Двенадцатый
         twelveMovein= (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveIn12);
         twelveMovein.setText(data.getkSinkIn().substring(0,1).toUpperCase()+data.getkSinkIn().substring(1));
-        twelveMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(twelveMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        twelveMovein.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(twelveMovein,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
 
         twelveMoveOut= (TextView)findViewById(R.id.moveinandmoveout_history_detail_moveOut12);
         if (!data.getkSinkOut().equals("")) {
@@ -261,8 +261,8 @@ public class MoveinandmoveoutHistoryDetail extends AppBuilderModuleMainAppCompat
         } else {
             twelveMoveOut.setText("");
         }
-        twelveMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor2());
-        setDrawableText(twelveMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor2());
+        twelveMoveOut.setTextColor(StaticData.getXmlParsedData().getColorSkin().getColor5());
+        setDrawableText(twelveMoveOut,StaticData.getXmlParsedData().getColorSkin().getColor1(),StaticData.getXmlParsedData().getColorSkin().getColor5());
         signatureTitle = (TextView)findViewById(R.id.moveinandmoveout_edit_signature_title);
         signatureHolder = new SignatureHolder(rootView);
         signatureHolder.initData(data);
