@@ -65,4 +65,7 @@
     <string name="moveinandmoveout_history">История сделок</string>
     <string name="moveinandmoveout_historydetail">Детали</string>
     <string name="moveinandmoveout_flat">№ кв.</string>
+    <string name="moveinandmoveout_good_button">Хорошо</string>
+    <string name="moveinandmoveout_fair_button">Удовл.</string>
+    <string name="moveinandmoveout_poor_button">Плохо</string>
 </resources>

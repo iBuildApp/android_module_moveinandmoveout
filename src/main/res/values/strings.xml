@@ -39,6 +39,9 @@
     <string name="moveinandmoveout_good">good</string>
     <string name="moveinandmoveout_fair">fair</string>
     <string name="moveinandmoveout_poor">poor</string>
+    <string name="moveinandmoveout_good_button">Good</string>
+    <string name="moveinandmoveout_fair_button">Fair</string>
+    <string name="moveinandmoveout_poor_button">Poor</string>
     <string name="moveinandmoveout_map">Map</string>
     <string name="moveinandmoveout_edit_save">Save</string>
     <string name="moveinandmoveout_tenantName">Tenant Name</string>
