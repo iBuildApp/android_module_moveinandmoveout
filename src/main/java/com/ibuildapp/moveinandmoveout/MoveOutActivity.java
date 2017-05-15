@@ -31,6 +31,7 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action0;
 
 public class MoveOutActivity extends AppBuilderModuleMainAppCompat {
+
     String title;
     SpreadsheetItemMove data;
     SpreadsheetItemMove secondData;
