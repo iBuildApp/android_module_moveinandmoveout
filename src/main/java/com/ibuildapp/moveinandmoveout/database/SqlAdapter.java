@@ -666,9 +666,10 @@ public class SqlAdapter {
         try {
             cursor = db.rawQuery(coreSql, null);
             if (cursor.moveToFirst()) {
-                do {
+                result = DBHelper.parseMove(cursor);
+            /*    do {
                     result = DBHelper.parseMove(cursor);
-                } while (cursor.moveToPosition(2));
+                } while (cursor.moveToNext());*/
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -693,9 +694,7 @@ public class SqlAdapter {
         try {
             cursor = db.rawQuery(joinSignature, null);
             if (cursor.moveToFirst()) {
-                do {
-                    result = DBHelper.parseMove(cursor);
-                } while (cursor.moveToPosition(2));
+                result = DBHelper.parseMove(cursor);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -716,9 +715,7 @@ public class SqlAdapter {
         try {
             cursor = db.rawQuery(coreSql, null);
             if (cursor.moveToFirst()) {
-                do {
-                    result = DBHelper.parseMove(cursor);
-                } while (cursor.moveToPosition(2));
+                result = DBHelper.parseMove(cursor);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -760,9 +757,7 @@ public class SqlAdapter {
         try {
             cursor = db.rawQuery(coreSql, null);
             if (cursor.moveToFirst()) {
-                do {
-                    result = DBHelper.parseMove(cursor);
-                } while (cursor.moveToPosition(2));
+                result = DBHelper.parseMove(cursor);
             }
         } catch (Exception e) {
             e.printStackTrace();
