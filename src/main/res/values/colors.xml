@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="moveinandmoveout_sync_color">#0096FF</color>
+    <color name="moveinandmoveout_black">#000000</color>
+    <color name="moveinandmoveout_color_button_text_second_white">#ffffff</color>
+    <color name="moveinandmoveout_color_button_text_second_black">#3f9410</color>
+    <color name="moveinandmoveout_signature">#33000000</color>
+    <color name="moveinandmoveout_edit_separator_color">#1A000000</color>
+    <color name="moveinandmoveout_button_green_color">#3f9410</color>
+    <color name="moveinandmoveout_button_white_color">#ffffff</color>
+</resources>

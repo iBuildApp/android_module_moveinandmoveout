@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/moveinandmoveout_adress_details_item_propertyname_layout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/moveinandmoveout_padding_left"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/moveinandmoveout_padding_top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/moveinandmoveout_adress_details_item_proprtyname_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/moveinandmoveout_propertyname"
+                    android:textSize="@dimen/moveinandmoveout_title_size"
+                    android:alpha="0.7"/>
+
+                <TextView
+                    android:id="@+id/moveinandmoveout_adress_details_item_proprtyname_title_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/moveinandmoveout_padding_top"
+                    android:text="Franklin Road"
+                    android:textSize="@dimen/moveinandmoveout_value_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#1A000000"
+                android:layout_marginLeft="@dimen/moveinandmoveout_padding_left"
+                android:layout_height="1dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/moveinandmoveout_adress_details_item_flatnumber_layout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/moveinandmoveout_padding_left"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/moveinandmoveout_padding_top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/moveinandmoveout_adress_details_item_flatnumber_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/moveinandmoveout_unit"
+                    android:textSize="@dimen/moveinandmoveout_title_size"
+                    android:alpha="0.7"/>
+
+                <TextView
+                    android:id="@+id/moveinandmoveout_adress_details_item_flatnumber__title_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/moveinandmoveout_padding_top"
+                    android:textSize="@dimen/moveinandmoveout_value_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#1A000000"
+                android:layout_marginLeft="@dimen/moveinandmoveout_padding_left"
+                android:layout_height="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moveinandmoveout_adress_details_item_address_layout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/moveinandmoveout_padding_left"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="@dimen/moveinandmoveout_padding_top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/moveinandmoveout_adress_details_item_address_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/moveinandmoveout_address"
+                        android:textSize="@dimen/moveinandmoveout_title_size"
+                        android:alpha="0.7"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+                         <LinearLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_weight="3.9">
+                                    <TextView
+                                        android:id="@+id/moveinandmoveout_adress_details_item_address_title_value"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom|left"
+                                        android:textSize="@dimen/moveinandmoveout_value_size" />
+                         </LinearLayout>
+                          <LinearLayout
+                              android:id="@+id/moveinandmoveout_edit_address_map"
+                              android:layout_width="wrap_content"
+                              android:layout_height="match_parent"
+                              android:layout_weight="0.1"
+                              android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/moveinandmoveout_edit_address_map_text"
+                                    android:layout_width="match_parent"
+                                    android:textSize="@dimen/moveinandmoveout_value_size"
+                                    android:layout_gravity="end"
+                                    android:layout_marginRight="5dp"
+                                    android:gravity="bottom|right"
+                                    android:text="@string/moveinandmoveout_map"
+                                    android:textAllCaps="false"
+                                    android:background="@null"
+                                    android:layout_height="match_parent" />
+
+                            </LinearLayout>
+
+                     </LinearLayout>
+         </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#1A000000"
+                    android:layout_marginLeft="@dimen/moveinandmoveout_padding_left"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moveinandmoveout_adress_details_item_monthlyrent_layout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/moveinandmoveout_padding_left"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/moveinandmoveout_padding_top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/moveinandmoveout_adress_details_item_monthlyrent_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/moveinandmoveout_monthlyrent"
+                    android:textSize="@dimen/moveinandmoveout_title_size"
+                    android:alpha="0.7"/>
+
+                <TextView
+                    android:id="@+id/moveinandmoveout_adress_details_item_monthlyrent_title_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/moveinandmoveout_padding_top"
+                    android:textSize="@dimen/moveinandmoveout_value_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#1A000000"
+                android:layout_marginLeft="@dimen/moveinandmoveout_padding_left"
+                android:layout_height="1dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/moveinandmoveout_adress_details_item_tenant_layout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/moveinandmoveout_padding_left"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/moveinandmoveout_padding_top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/moveinandmoveout_adress_details_item_tenant_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/moveinandmoveout_tenant"
+                    android:textSize="@dimen/moveinandmoveout_title_size"
+                    android:alpha="0.7"/>
+
+                <TextView
+                    android:id="@+id/moveinandmoveout_adress_details_item_tenant_title_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/moveinandmoveout_padding_top"
+                    android:textSize="@dimen/moveinandmoveout_value_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/moveinandmoveout_button"
+            android:text="Move in / Move out "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_button_address"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/moveinandmoveout_button_history"
+            android:text="@string/moveinandmoveout_viewlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</ScrollView>

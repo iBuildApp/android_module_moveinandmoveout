@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linerlayoutmain"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/moveinandmoveout_main_header_background"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp" >
+
+    <LinearLayout
+        android:id="@+id/linerlayoutprop"
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/moveinandmoveout_item_propertyname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/moveinandmoveout_value_size"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:alpha="0.7"
+            />
+
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/moveinandmoveout_next_screen"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:src="@drawable/moveinandmoveout_next_screen"
+                />
+        </LinearLayout>
+    </LinearLayout>
+        <View
+            android:id="@+id/moveinandmoveout_main_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="#1A000000"/>
+    <LinearLayout
+        android:id="@+id/moveinandmoveout_layout_flatnumber"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginBottom="1.5dp"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:background="#FFFFFF"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/moveinandmoveout_item_flatnumber"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:gravity="left|center"
+            android:textSize="@dimen/moveinandmoveout_main_text_size"
+            android:alpha="0.7"/>
+        <TextView
+            android:id="@+id/moveinandmoveout_item_monthlyrent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="@dimen/moveinandmoveout_main_text_size"
+            android:gravity="left|center"
+            android:layout_width="70dp"
+            android:alpha="0.7"/>
+
+        <TextView
+            android:id="@+id/moveinandmoveout_item_status"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center"
+            android:textColor="#000000"
+            android:textSize="@dimen/moveinandmoveout_main_text_size"
+            android:alpha="0.7"/>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/moveinandmoveout_main_separator2"
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:background="#1A000000"/>
+        <LinearLayout
+            android:id="@+id/moveinandmoveout_layout_flatnumber2"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginBottom="1.5dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFFFFF"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/moveinandmoveout_item_flatnumber2"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:gravity="left|center"
+                android:textSize="@dimen/moveinandmoveout_main_text_size"
+                android:alpha="0.7"/>
+            <TextView
+                android:id="@+id/moveinandmoveout_item_monthlyrent2"
+                android:layout_height="match_parent"
+                android:textColor="#000000"
+                android:textSize="@dimen/moveinandmoveout_main_text_size"
+                android:gravity="left|center"
+                android:layout_width="70dp"
+                android:alpha="0.7"/>
+
+            <TextView
+                android:id="@+id/moveinandmoveout_item_status2"
+                android:layout_marginRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:textColor="#000000"
+                android:textSize="@dimen/moveinandmoveout_main_text_size"
+                android:alpha="0.7"/>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/moveinandmoveout_main_separator3"
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:background="#1A000000"/>
+        <LinearLayout
+            android:id="@+id/moveinandmoveout_layout_flatnumber3"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginBottom="1.5dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFFFFF"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/moveinandmoveout_item_flatnumber3"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:gravity="left|center"
+                android:textSize="@dimen/moveinandmoveout_main_text_size"
+                android:alpha="0.7"/>
+            <TextView
+                android:id="@+id/moveinandmoveout_item_monthlyrent3"
+                android:layout_height="match_parent"
+                android:textColor="#000000"
+                android:textSize="@dimen/moveinandmoveout_main_text_size"
+                android:gravity="left|center"
+                android:layout_width="70dp"
+                android:alpha="0.7"/>
+
+            <TextView
+                android:id="@+id/moveinandmoveout_item_status3"
+                android:layout_marginRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:textColor="#000000"
+                android:layout_marginTop="3dp"
+                android:textSize="@dimen/moveinandmoveout_main_text_size"
+                android:alpha="0.7"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

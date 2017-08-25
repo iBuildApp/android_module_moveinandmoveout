@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/moveinandmoveout_edit_signature_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:includeFontPadding="false"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:text="@string/moveinandmoveout_signature"
+            android:textSize="13sp"
+            android:alpha="0.7"/>
+
+        <LinearLayout
+            android:id="@+id/moveinandmoveout_edit_signature_root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/moveinandmoveout_edit_signature_lock"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/moveinandmoveout_edit_signature_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp">
+
+                <ImageView
+                    android:id="@+id/moveinandmoveout_edit_signature_back_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"/>
+
+                <com.ibuildapp.moveinandmoveout.view.DrawingView
+                    android:id="@+id/moveinandmoveout_edit_signature_paint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/moveinandmoveout_edit_signature_lock_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                app:rv_color="@android:color/black"
+                app:rv_centered="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/moveinandmoveout_edit_signature_image"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerInside"/>
+
+                    <TextView
+                        android:id="@+id/moveinandmoveout_edit_signature_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/moveinandmoveout_signature_unlock"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+            </com.andexert.library.RippleView>
+
+            <TextView
+                android:id="@+id/moveinandmoveout_edit_signature_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/moveinandmoveout_signature_clear"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

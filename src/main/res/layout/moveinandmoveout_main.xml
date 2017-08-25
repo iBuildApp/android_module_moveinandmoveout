@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/moveinandmoveout_main_root_view"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/moveinandmoveout_search" />
+
+            <EditText
+                android:id="@+id/moveinandmoveout_main_search_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="left|center_vertical"
+                android:hint="@string/moveinandmoveout_main_search"
+                android:lines="1"
+                android:textColor="#000"
+                android:textColorHint="#66000000"
+                android:textSize="@dimen/moveinandmoveout_main_text_size" />
+
+            <ImageView
+                android:id="@+id/moveinandmoveout_main_search_clear_text"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/moveinandmoveout_clear_search"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/moveinandmoveout_main_toppanel"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center"
+                android:text="@string/moveinandmoveout_flat"
+                android:textColor="#000"
+                android:textSize="@dimen/moveinandmoveout_toppanel_text_size" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/moveinandmoveout_signature" />
+        </LinearLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#33000000" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/moveinandmoveout_monthlyrent"
+                android:textColor="#000"
+                android:textSize="@dimen/moveinandmoveout_toppanel_text_size" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/moveinandmoveout_signature" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="@string/moveinandmoveout_tenant"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:textColor="#000"
+                android:textSize="@dimen/moveinandmoveout_toppanel_text_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="@color/moveinandmoveout_signature" />
+
+    <LinearLayout
+        android:id="@+id/moveinandmoveout_main_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_weight="1.00">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/moveinandmoveout_main_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#80000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/moveinandmoveout_main_bottom_bar_height"
+            android:background="#FFF"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/moveinandmoveout_main_about_us_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/moveinandmoveout_about_us" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/moveinandmoveout_about_us"
+                        android:textColor="#000"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/moveinandmoveout_main_fulllist_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/moveinandmoveout_fullist"
+                        android:layout_height="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/moveinandmoveout_fullist"
+                        android:textColor="#000"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/moveinandmoveout_main_availble_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/moveinandmoveout_available" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/moveinandmoveout_available"
+                        android:textColor="#000"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/moveinandmoveout_main_rented_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/moveinandmoveout_rented"
+                        android:layout_height="22dp"
+                        android:layout_width="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/moveinandmoveout_rented"
+                        android:textColor="#000"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/moveinandmoveout_main_sync_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/moveinandmoveout_main_sync_image"
+                        android:layout_width="30dp"
+                        android:layout_height="22dp"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/moveinandmoveout_sync" />
+
+                    <TextView
+                        android:id="@+id/moveinandmoveout_main_sync_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/moveinandmoveout_sync"
+                        android:textColor="#000"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
